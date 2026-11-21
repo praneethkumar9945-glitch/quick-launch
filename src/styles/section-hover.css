@@ -1,0 +1,75 @@
+.solvik :is(
+  .glass,
+  .glass-tile,
+  .glass-lime,
+  .panel,
+  .dashboard-panel,
+  .stat-card,
+  .dashboard-stat-card,
+  .dashboard-data-card,
+  .dashboard-summary-card,
+  .dashboard-income-card,
+  .dashboard-glass-card,
+  .es-card,
+  .es-metric,
+  .es-ai-card,
+  article,
+  [class~="card"],
+  [class*="-card"],
+  section:is([class*="rounded"], [class*="border"], [class*="glass"], [class*="card"])
+) {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .solvik :is(
+    .glass,
+    .glass-tile,
+    .glass-lime,
+    .panel,
+    .dashboard-panel,
+    .stat-card,
+    .dashboard-stat-card,
+    .dashboard-data-card,
+    .dashboard-summary-card,
+    .dashboard-income-card,
+    .dashboard-glass-card,
+    .es-card,
+    .es-metric,
+    .es-ai-card,
+    article,
+    [class~="card"],
+    [class*="-card"],
+    section:is([class*="rounded"], [class*="border"], [class*="glass"], [class*="card"])
+  ):hover {
+    border-color: var(--primary);
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--primary) 58%, transparent),
+      0 0 18px color-mix(in oklab, var(--primary) 26%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .solvik :is(
+    .glass,
+    .glass-tile,
+    .glass-lime,
+    .panel,
+    .dashboard-panel,
+    .stat-card,
+    .dashboard-stat-card,
+    .dashboard-data-card,
+    .dashboard-summary-card,
+    .dashboard-income-card,
+    .dashboard-glass-card,
+    .es-card,
+    .es-metric,
+    .es-ai-card,
+    article,
+    [class~="card"],
+    [class*="-card"],
+    section:is([class*="rounded"], [class*="border"], [class*="glass"], [class*="card"])
+  ) {
+    transition: none;
+  }
+}
