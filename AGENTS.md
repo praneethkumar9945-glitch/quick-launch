@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Keep school-suite pages in TanStack file routes under `src/routes` and shared feature code under `src/modules` or `src/components`; the suite depends on those shared contexts and layouts.
+- Keep app records in the existing browser-local storage adapters unless a shared data service is explicitly introduced; the imported app has no server datastore and its workflows expect browser-local reads and writes.

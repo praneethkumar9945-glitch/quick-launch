@@ -1,0 +1,20 @@
+{
+  "source": "code-archive",
+  "artifact": "school-orbit-operations-hub.zip",
+  "capabilities": [
+    { "capability": "code", "source": "Uploaded TanStack Start school operations app", "outcome": "Imported all application pages, modules, styling, local tools, and client-side workflows; the preview loads", "status": "verified", "next_action": "None" },
+    { "capability": "schema", "source": "Archive inspection found no database schema", "outcome": "No shared database exists in the source; preserve its browser-only storage model", "status": "verified", "next_action": "None" },
+    { "capability": "records", "source": "Demo data is bundled in code; user-edited records are stored only in the original browser and were not included in the ZIP", "outcome": "Bundled examples will be preserved; original browser-only records are not migrated", "status": "pending", "next_action": "If original saved records are needed, provide an export from the original app after preview" },
+    { "capability": "auth_identities", "source": "No authentication implementation or user export found", "outcome": "No sign-in identities to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "authorization", "source": "No authenticated access boundaries found", "outcome": "No authorization system to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "uploaded_file_bytes", "source": "Bundled logos, background images, favicon, and prototype student documents", "outcome": "Imported the used brand images, generated a compact brand icon, and retained prototype student documents", "status": "verified", "next_action": "None" },
+    { "capability": "external_providers", "source": "Browser-local OCR and spreadsheet/PDF tools; outbound email and WhatsApp links; public image/font URLs", "outcome": "No credentialed or server-side provider integration found; preserve browser tools and outbound links", "status": "verified", "next_action": "None" },
+    { "capability": "public_endpoints", "source": "Archive inspection found no app API routes", "outcome": "No public endpoints to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "callbacks", "source": "Archive inspection found no OAuth or provider callbacks", "outcome": "No callbacks to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "webhooks", "source": "Archive inspection found no webhooks", "outcome": "No webhooks to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "schedules", "source": "Archive inspection found no background schedules or cron jobs", "outcome": "No schedules to migrate", "status": "verified", "next_action": "None" },
+    { "capability": "secrets", "source": "No secret values or credential files found; two optional VITE_* configuration names are non-secret", "outcome": "No secrets need to be requested", "status": "verified", "next_action": "None" },
+    { "capability": "cutover", "source": "No external backend or domain cutover requested", "outcome": "Leave the existing source app and external links unchanged", "status": "verified", "next_action": "None" },
+    { "capability": "verification", "source": "Target preview and uploaded test suite", "outcome": "Build passes; nine main sections load without runtime errors or phone-width overflow; creating an agent persists after refresh; route test passes; the full imported test suite reports 23 failures", "status": "pending", "next_action": "Review the 23 imported admin and finance test failures before treating full test verification as complete" }
+  ]
+}
