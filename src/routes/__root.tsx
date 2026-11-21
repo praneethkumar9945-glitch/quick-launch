@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import sectionHoverCss from "../styles/section-hover.css?url";
+import quickToolsOverlayCss from "../styles/quick-tools-overlay.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -96,6 +97,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: sectionHoverCss,
+      },
+      {
+        rel: "stylesheet",
+        href: quickToolsOverlayCss,
       },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" },
       { rel: "icon", type: "image/png", href: "/favicon.png" },

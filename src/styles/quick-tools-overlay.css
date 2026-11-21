@@ -1,0 +1,48 @@
+.quick-tools {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 30;
+  width: 96px;
+  height: 44px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.quick-tools-panel {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 62px;
+  pointer-events: auto;
+  transform: translate(0, -50%);
+  transition: transform 300ms ease, opacity 200ms ease;
+}
+
+.quick-tools[data-collapsed="true"] .quick-tools-panel {
+  width: 62px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-62px, -50%);
+}
+
+.quick-tools-toggle {
+  position: absolute;
+  top: 50%;
+  left: 68px;
+  margin-left: 0;
+  pointer-events: auto;
+  translate: 0 -50%;
+  transition: left 300ms ease, background 200ms ease, transform 200ms ease;
+}
+
+.quick-tools[data-collapsed="true"] .quick-tools-toggle {
+  left: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quick-tools-panel,
+  .quick-tools-toggle {
+    transition: none;
+  }
+}
